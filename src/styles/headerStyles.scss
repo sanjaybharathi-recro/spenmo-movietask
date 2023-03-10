@@ -53,6 +53,7 @@ main {
     .content-list-container,
     .fav-content-list-container {
         max-width: 998px;
+        min-width: 998px;
         margin: 2rem auto;
         display: grid;
         grid-template-columns: 23% 23% 23% 23%;
