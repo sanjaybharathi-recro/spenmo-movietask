@@ -1,0 +1,1 @@
+export default `https://www.omdbapi.com/?apikey=ee1801df`

@@ -1,0 +1,19 @@
+@mixin FJCBAIC {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin FJCBAIS {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.FJCBAIC {
+    @include FJCBAIC;
+}
+
+.FJCBAIS {
+    @include FJCBAIS;
+}

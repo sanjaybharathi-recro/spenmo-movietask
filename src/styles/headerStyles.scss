@@ -1,0 +1,96 @@
+body {
+    background-color: rgba(0, 0, 0, 0.798);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    height: 50px;
+    @include FJCBAIC;
+    padding: 1rem 0;
+    color: white;
+    max-width: 998px;
+    margin: 2rem auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    .search-container {
+        max-width: 998px;
+        margin: 2rem auto;
+
+        input {
+            width: 500px;
+            border-radius: 8px 0 0 8px;
+        }
+
+        input,
+        select {
+            padding: 1rem;
+            background-color: white;
+            outline: none;
+        }
+
+        select {
+            width: 100px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        button {
+            height: 50px;
+            background-color: $PrimaryColor;
+            margin-left: 1rem;
+            border: none;
+            padding: 0 2rem;
+            border-radius: 8px;
+        }
+    }
+
+    .content-list-container,
+    .fav-content-list-container {
+        max-width: 998px;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        justify-content: space-between;
+        color: white;
+
+        .content-item {
+            width: 100%;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 1rem;
+
+            h4 {
+                margin-top: 8px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            svg {
+                height: 24px;
+                width: 24px;
+                margin-top: 8px;
+                stroke: white;
+                fill: white;
+            }
+
+            img {
+                width: 100%;
+                min-height: 250px;
+                max-height: 250px;
+                object-fit: cover;
+            }
+
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+
+}
