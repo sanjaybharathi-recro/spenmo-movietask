@@ -45,5 +45,5 @@ export const bindLStoState = (list: ContentListItem[]) => {
         })
         return items;
     }
-    else return []
+    else return list;
 }
